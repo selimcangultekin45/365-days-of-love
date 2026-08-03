@@ -74,4 +74,26 @@
 
 "Day 38: One day, I want our favorite place to be wherever we're together, no matter where that is. 🌍",
 
+"Day 39: There are moments when I stop whatever I'm doing because a random thought of you quietly steals my attention... and honestly, I don't mind at all. ❤️",
 
+"Day 40: Sweetheart, I hope you always remember that you never have to earn my love just by being perfect. You are already enough. 🤍",
+
+"Day 41: I didn't just find someone to love—I found someone I genuinely enjoy sharing life with. 🌿",
+
+"Day 42: Some of my happiest moments aren't the big ones. They're the quiet conversations we'll probably never remember, but I'll always cherish. 🌙",
+
+"Day 43: If your heart ever feels tired, let mine remind it that you're never alone. 🫂❤️",
+
+"Day 44: Distance can separate two hands, but it could never make me care about you any less. ✨",
+
+"Day 45: Your voice has become one of my favorite places to find peace after a long day. 🎧🤍",
+
+"Day 46: Babe, don't be so hard on yourself. You're still growing, still learning, and you're doing better than you think. 🌸",
+
+"Day 47: I hope life always gives us something new to laugh about together, no matter how many years pass. 😊",
+
+"Day 48: If I had one extra hour today, I'd spend every minute of it with you without thinking twice. ❤️",
+
+"Day 49: Loving you has never felt like a responsibility. It feels like the easiest decision my heart has ever made. 💖",
+
+"Day 50: Fifty days ago this little journey began. Today I realized something... no matter how many messages I write, they'll never be enough to tell you how grateful I am to have you in my life. This is only the beginning. ❤️📖",
