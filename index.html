@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>365 Days of Love ❤️</title>
+
+<style>
+body{
+margin:0;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:#ffdde1;
+font-family:Arial,sans-serif;
+text-align:center;
+}
+
+.box{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 0 20px rgba(0,0,0,.2);
+max-width:350px;
+}
+
+button{
+font-size:60px;
+border:none;
+background:none;
+cursor:pointer;
+}
+
+#message{
+margin-top:20px;
+font-size:22px;
+color:#e91e63;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+<h2>365 Days of Love ❤️</h2>
+
+<p>Tap the heart</p>
+
+<button onclick="showMessage()">❤️</button>
+
+<div id="message"></div>
+
+</div>
+
+<script>
+
+const messages=[
+"You are my favorite person. ❤️",
+"You make every day brighter. ☀️",
+"I love you more than yesterday. ❤️"
+];
+
+function showMessage(){
+
+const today=Math.floor((Date.now()/86400000));
+
+const message=messages[today%messages.length];
+
+document.getElementById("message").innerHTML=message;
+
+}
+
+</script>
+
+</body>
+</html>
