@@ -219,3 +219,27 @@
 "Day 110: Falling asleep is easier when my last thought is you. Waking up is better when my first thought is you. 🌙☀️",
 
 "Day 111: My favorite love story will always be the one we're writing together, one ordinary day at a time. 📖❤️",
+
+"Day 112: Angel, don't forget to smile today. The world looks better when you do. 😊🤍",
+
+"Day 113: I never thought someone could become my favorite habit... then I met you. ❤️",
+
+"Day 114: Some days I miss you a little more than usual. Today happens to be one of those days. 🌙",
+
+"Day 115: You make my heart feel lighter without even trying. 🌸",
+
+"Day 116: My precious, I hope today reminds you how capable, kind, and beautiful you truly are. ✨",
+
+"Day 117: If happiness had a face, mine would probably look a lot like yours. 🥹❤️",
+
+"Day 118: Loving you isn't the best part of my day anymore... it's become the best part of my life. 🤍",
+
+"Day 119: No matter how many sunsets I see, I'll always hope the next one is beside you. 🌅",
+
+"Day 120: Sweetheart, thank you for making 'us' my favorite word. 💖",
+
+"Day 121: I don't need a special occasion to remind you that you're deeply appreciated. Today feels like a perfect day to say it anyway. 🌷",
+
+"Day 122: Sometimes I wonder what I did to deserve someone as wonderful as you. Then I stop wondering and simply feel grateful. ❤️",
+
+"Day 123: No distance, no busy day, and no amount of time could ever make you feel less important to me. 🤍"
