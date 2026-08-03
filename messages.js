@@ -97,3 +97,27 @@
 "Day 49: Loving you has never felt like a responsibility. It feels like the easiest decision my heart has ever made. 💖",
 
 "Day 50: Fifty days ago this little journey began. Today I realized something... no matter how many messages I write, they'll never be enough to tell you how grateful I am to have you in my life. This is only the beginning. ❤️📖",
+
+"Day 51: Good morning, beautiful. I hope today is gentle with you, and if it isn't, I hope you remember that someone is quietly cheering for you. ☀️❤️",
+
+"Day 52: You have no idea how often the smallest things remind me of you—a song, a sunset, or even the smell of fresh coffee. 🤍",
+
+"Day 53: I don't just miss you when we're apart. Sometimes I miss you while we're talking, because I wish I could be beside you instead. 🫂",
+
+"Day 54: Darling, thank you for making my heart feel understood without asking it to explain itself. 🌸",
+
+"Day 55: One day, I want our ordinary routine to become my favorite adventure. 🏡✨",
+
+"Day 56: I admire your heart even more than your smile, and that's saying a lot. ❤️",
+
+"Day 57: If I could protect one thing forever, it would be the sparkle in your eyes whenever you're truly happy. ✨",
+
+"Day 58: My favorite memories are the ones that don't seem important to anyone else... but mean everything to us. 📸",
+
+"Day 59: I hope you never settle for less than the happiness you deserve—not in life, not in dreams, and never in love. 🤍",
+
+"Day 60: Sometimes I imagine looking at you years from now and realizing I somehow love you even more than I do today. 🌹",
+
+"Day 61: You make my heart feel at home in a way I never thought was possible. 🏡❤️",
+
+"Day 62: If today feels overwhelming, close your eyes for a moment and imagine me holding your hand. We'll get through it together. 🤝💖",
