@@ -679,3 +679,27 @@
 "Day 340: No matter how many days pass, I hope we never forget the excitement of choosing each other in the beginning. ✨",
 
 "Day 341: We are getting closer to the end of this little journey, but I hope you know this was never just about counting days. It was about celebrating every reason you became special to me. 🤍",
+
+"Day 342: If someone asked me what my favorite part of this journey was, I wouldn't choose one day. I'd choose every little moment that brought us here. 🌿",
+
+"Day 343: My love, you have a way of making ordinary memories feel like something worth keeping forever. 📸",
+
+"Day 344: I hope life gives you the same amount of happiness that you have unknowingly brought into mine. 🌼",
+
+"Day 345: The beautiful thing about love is discovering that the person you adore is also the person you can trust. 🗝️",
+
+"Day 346: Someday we might forget the exact dates and details, but I hope we never forget how we made each other feel. 🌙",
+
+"Day 347: I don't need a perfect story. I just want a real one, with your laughter, your dreams, and your hand in mine. 🫱🏻‍🫲🏼",
+
+"Day 348: Every version of my future that makes me smile has one thing in common... somehow, you're there. 🌅",
+
+"Day 349: My favorite memories aren't only the exciting ones. Sometimes it's just knowing you were there that made them special. 🍂",
+
+"Day 350: Three hundred and fifty days... and I still find new reasons to admire you. That's my favorite thing about us. ✨",
+
+"Day 351: If my heart could keep a collection of its most precious moments, I think your smile would appear on every page. 🎞️",
+
+"Day 352: You are proof that the best things in life are sometimes the ones we never knew we were searching for. 🍀",
+
+"Day 353: Before this journey ends, I want you to know something simple: every single day spent loving you was a day well spent. 🤍"
