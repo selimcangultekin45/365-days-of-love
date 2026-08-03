@@ -703,3 +703,23 @@
 "Day 352: You are proof that the best things in life are sometimes the ones we never knew we were searching for. 🍀",
 
 "Day 353: Before this journey ends, I want you to know something simple: every single day spent loving you was a day well spent. 🤍"
+
+"Day 354: I wonder if you realize how many beautiful thoughts have your name somewhere inside them. Probably more than you would guess. 🌸",
+
+"Day 355: My love, if this journey taught me anything, it's that the right person doesn't just bring happiness... they bring a sense of belonging. 🏡",
+
+"Day 356: I hope we always keep a little bit of the excitement we had at the beginning, no matter how many years pass. 🎡",
+
+"Day 357: One day, when we look back at our younger selves, I hope we smile and say, 'We were building something beautiful all along.' 🌱",
+
+"Day 358: You are one of the rare people who can make my heart feel both peaceful and full of butterflies at the same time. 🦋",
+
+"Day 359: The greatest gift isn't a perfect life. It's having someone special to share the imperfect, beautiful one with. 🎁",
+
+"Day 360: Five days remain until this little journey reaches its final page, but my feelings for you were never about a number. They were about every moment that made me choose you again. 📖",
+
+"Day 361: If I could send one message back to the beginning of our story, it would simply say: 'Keep going. Someone amazing is waiting for you.' ✉️",
+
+"Day 362: I hope you always remember that somewhere in this world, there is a heart that feels lucky because you exist. 🌍",
+
+"Day 363: Tomorrow and the days after this injourney completes... and I find myself thinking about the same thing I felt at the beginning: I'm grateful that it was you. 🤍"
