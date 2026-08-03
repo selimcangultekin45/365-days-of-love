@@ -561,3 +561,27 @@
 "Day 281: Tomorrow is your special day, but if I'm honest, celebrating you has quietly been my favorite part of every day. 🎁🤍",
 
 "Day 282: Happy Birthday, my love. 🎂❤️ Today isn't special just because it's your birthday—it's special because it's the day someone truly extraordinary came into the world. I hope this new year of your life brings you quiet mornings, genuine laughter, unexpected blessings, and countless reasons to believe in yourself, because I already do. Thank you for letting me be part of your story. Watching you grow, smile, dream, and become even more amazing is one of the greatest privileges of my life. I wish I could celebrate this day beside you, hold your hand, look into your beautiful eyes, and remind you in person how deeply you are loved. Until that day comes, keep this promise close to your heart: no matter how many birthdays pass, I'll always be grateful that the world was gifted someone like you. Happy Birthday, beautiful. May this be your happiest year yet... and may I be lucky enough to spend many more birthdays by your side. 🎉🌹🤍",
+
+"Day 283: I hope yesterday reminded you of something I've always known... the world is brighter because you're in it. 🌤️",
+
+"Day 284: Your laugh has quietly become one of my favorite sounds in the entire world. 🎶",
+
+"Day 285: I still catch myself wondering how I got so lucky. Then I remember that some blessings don't come with explanations. 🍀",
+
+"Day 286: If life gave me a thousand paths to choose from, I'd still hope every single one somehow leads back to you. 🛤️",
+
+"Day 287: If you could keep just one memory of us forever, which one do you think your heart would choose? 📸💙",
+
+"Day 288: Every time I picture the future, there's always one familiar smile waiting for me at the end of it. 🌅",
+
+"Day 289: You make even patience feel meaningful, because every day brings me one step closer to you. 🧭",
+
+"Day 290: My favorite place has never been a city or a country... it's the peaceful feeling I get whenever I'm with you. 🌍",
+
+"Day 291: Sometimes I imagine us years from now, laughing at things that seem important today. Somehow that thought makes me smile. ☕",
+
+"Day 292: I don't want a life that's perfect. I want one that's real, messy sometimes, full of laughter, full of growth... and shared with you. 🌿",
+
+"Day 293: Just knowing you're out there chasing your dreams makes me want to keep chasing mine too. ⭐",
+
+"Day 294: No matter what tomorrow brings, I hope we always keep choosing each other, one day at a time. 🫶",
