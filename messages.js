@@ -297,3 +297,27 @@
 "Day 149: I don't think you fully realize how much peace your presence brings into my life. Just knowing you're here somehow makes everything feel a little lighter. 🕊️",
 
 "Day 150: One hundred and fifty days later, there's something I've realized... love isn't only found in grand gestures or perfect moments. It's hidden in the little things: wondering if you've eaten, smiling at your name on my screen, wishing you were beside me during an ordinary day, and thanking life for bringing you into mine. If I could start this journey all over again, I'd still choose you—every single time. 📖💙"
+
+"Day 151: You don't just make me feel loved—you make me feel understood, and that's a gift I'll never take for granted. 🌿",
+
+"Day 152: Starlight, I hope today reminds you how much light you bring into other people's lives without even noticing. ⭐",
+
+"Day 153: I still find it amazing that one person can become the reason so many ordinary moments feel extraordinary. 🌤️",
+
+"Day 154: If I ever go quiet, don't mistake it for distance. Sometimes I'm simply admiring how lucky I am to have you. 🍃",
+
+"Day 155: I hope the next beautiful memory we make together arrives sooner than we expect. 🎈",
+
+"Day 156: You're my favorite plot twist—the one I never saw coming but now can't imagine living without. 📖",
+
+"Day 157: My dearest, thank you for making my heart feel like it finally found where it belongs. 🩵",
+
+"Day 158: Even on the busiest days, there's always a tiny moment where my thoughts gently wander back to you. 🌺",
+
+"Day 159: I don't think love is measured by big promises. I think it's found in choosing the same person over and over again. 🫶",
+
+"Day 160: If I could save one feeling forever, it would be the quiet happiness I feel whenever you're around. 🌊",
+
+"Day 161: You make tomorrow feel a little less uncertain and a lot more exciting. 🧡",
+
+"Day 162: I hope one day we smile at these messages together, sitting side by side, wondering how we ever spent so much time apart. ☕💛",
