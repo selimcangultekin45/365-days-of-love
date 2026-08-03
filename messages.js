@@ -393,3 +393,27 @@
 "Day 197: Darling, you're beautiful in ways mirrors could never show. The best parts of you are the ones only the heart can see. 🌹",
 
 "Day 198: If loving you had a sound, I think it would be the quiet heartbeat I feel whenever you cross my mind. ❤️"
+
+"Day 199: Can I confess something? Sometimes I reread our conversations just to relive the feeling of having you close, even for a little while. 📱🤍",
+
+"Day 200: Two hundred days... and somehow you still manage to surprise my heart. I used to think love was about finding the right person. Now I know it's about waking up every day and feeling grateful that I found you. If I could write one promise here, it would be this: I'll never stop choosing us. 📖❤️",
+
+"Day 201: My lovely girl, even the busiest day feels incomplete if I don't get to hear from you. ☀️",
+
+"Day 202: I can't wait for the day when reaching for your hand won't require imagination anymore. 🫶",
+
+"Day 203: You are my favorite notification... but one day, I want you to be my favorite 'good morning' beside me instead. 🌅",
+
+"Day 204: Every heartbeat seems to whisper your name a little more often than it probably should. ❤️‍🔥",
+
+"Day 205: I hope you never question your worth, because from where I'm standing, you're one of the most extraordinary people I've ever known. 🌷",
+
+"Day 206: If I could freeze one feeling forever, it would be the warmth that fills my heart whenever you smile at me. 🌤️",
+
+"Day 207: My sweetheart, I don't dream about a perfect life. I dream about a real one—with you beside me through all of it. 🏡",
+
+"Day 208: Even after all this time, you still have that beautiful ability to make my heart skip a beat without even trying. 💫",
+
+"Day 209: Sometimes I wish I could press a button that instantly brings me to you... I'd probably wear it out in a week. 🚪✨",
+
+"Day 210: Loving you doesn't feel like something I have to remember. It feels as natural as breathing, and just as essential. 🩵",
