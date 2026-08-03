@@ -321,3 +321,27 @@
 "Day 161: You make tomorrow feel a little less uncertain and a lot more exciting. 🧡",
 
 "Day 162: I hope one day we smile at these messages together, sitting side by side, wondering how we ever spent so much time apart. ☕💛",
+
+"Day 163: Guess what? You crossed my mind again today... although, let's be honest, you never really leave. 😄",
+
+"Day 164: Blue looks beautiful in the sky, but somehow it reminds me of the calm you bring into my life. 💙",
+
+"Day 165: If we ever get caught in the rain together, promise me we won't run. Some memories deserve to be soaked. 🌧️",
+
+"Day 166: Little reminder: you're allowed to rest. You don't have to carry the whole world on your shoulders. 🌿",
+
+"Day 167: My favorite human, thank you for making love feel like friendship too. 🫶",
+
+"Day 168: I hope today surprises you with something that makes you laugh out loud. 🎈",
+
+"Day 169: Sometimes I wonder which tiny moment will become our favorite memory years from now. 🍂",
+
+"Day 170: I'd gladly listen to you talk about your day, even if it's just about the most ordinary things. ☕",
+
+"Day 171: Every time I imagine my future, there's one thing that never changes... you're there. 🧭",
+
+"Day 172: Today, be as kind to yourself as you are to everyone else. You deserve that kindness too. 🌼",
+
+"Day 173: Moonbeam, I hope tonight brings you peaceful dreams and an even brighter tomorrow. 🌙",
+
+"Day 174: You make life feel less like something I have to figure out alone, and more like an adventure I can't wait to share. 🧡",
