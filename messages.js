@@ -171,3 +171,28 @@
 "Day 86: No matter how ordinary today feels, remember that someone out there is incredibly grateful that you exist. 🌹",
 
 "Day 87: Loving you has taught me that happiness isn't always loud. Sometimes it's as quiet as thinking about you before I fall asleep. 🌙❤️",
+
+"Day 88: I hope you always find reasons to smile, even on the days when life forgets to give you one. ❤️",
+
+"Day 89: If I ever become part of your happiest memories, I'll consider myself the luckiest person alive. 🌸",
+
+"Day 90: Some people change your plans. You changed the way I look at the future. ✨",
+
+"Day 91: I don't need every day to be perfect. I just want us to keep finding our way back to each other. 🤍",
+
+"Day 92: One random thought of you can turn an ordinary afternoon into my favorite part of the day. ☀️",
+
+"Day 93: Your smile deserves to be protected, your heart deserves to be appreciated, and your dreams deserve to come true. 🌹",
+
+"Day 94: Even if the whole world became noisy, I'd still recognize the peace I feel whenever I think about you. 🌙",
+
+"Day 95: My favorite conversations with you are the ones that make us lose track of time without even noticing. ⏳❤️",
+
+"Day 96: I hope the future is kind to us, but even more than that, I hope we're always kind to each other. 🤍",
+
+"Day 97: If someone asked me what love feels like, I'd probably smile first... because that's what happens every time I think of you. 😊",
+
+"Day 98: Thank you for being the person who makes tomorrow feel worth looking forward to. 🌅",
+
+"Day 99: No matter where life takes us, I hope we never stop making each other feel at home. 🏡❤️",
+  
