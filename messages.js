@@ -147,3 +147,27 @@
 "Day 74: Falling asleep is easier when I imagine the day we'll finally say goodnight without a screen between us. 🌙❤️",
 
 "Day 75: Seventy-five little letters later, one thing has never changed: if I had the chance to choose again, I'd still choose you without a second of hesitation. 🤍"
+
+"Day 76: I hope one day we look back at these messages and smile because every dream we whispered to each other became a memory. ❤️",
+
+"Day 77: If I could quietly leave one thing in your heart forever, it would be the certainty that you are deeply loved, exactly as you are. 🤍",
+
+"Day 78: You don't have to impress me. The real you has always been my favorite version. 🌸",
+
+"Day 79: Every sunset reminds me that even the most beautiful days eventually end... but loving you never has to. 🌅",
+
+"Day 80: Sometimes I imagine us growing older together, still teasing each other over the smallest things and still laughing like we do now. 😊",
+
+"Day 81: Darling, I hope you never let one bad day convince you that you're having a bad life. Better days always find beautiful people. 🌼",
+
+"Day 82: The safest place I've ever found isn't somewhere on a map—it's in the comfort your love gives me. 🏡",
+
+"Day 83: If I had the power to erase every doubt from your mind, I'd replace each one with a reason to believe in yourself. ✨",
+
+"Day 84: I never knew a single notification could make my heart smile until your name started appearing on my screen. 📱❤️",
+
+"Day 85: My favorite future is the one where I don't have to miss you anymore. 🤍",
+
+"Day 86: No matter how ordinary today feels, remember that someone out there is incredibly grateful that you exist. 🌹",
+
+"Day 87: Loving you has taught me that happiness isn't always loud. Sometimes it's as quiet as thinking about you before I fall asleep. 🌙❤️",
