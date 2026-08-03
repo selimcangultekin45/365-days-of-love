@@ -243,3 +243,27 @@
 "Day 122: Sometimes I wonder what I did to deserve someone as wonderful as you. Then I stop wondering and simply feel grateful. ❤️",
 
 "Day 123: No distance, no busy day, and no amount of time could ever make you feel less important to me. 🤍"
+
+"Day 124: I hope today gives you at least one moment that makes you stop and think, 'Life is beautiful.' 🌼",
+
+"Day 125: My favorite place to be will always be somewhere close enough to see you smile. 😊",
+
+"Day 126: Some people search their whole lives for a love that feels safe. I'm grateful I found mine in you. 🌿",
+
+"Day 127: Hey, beautiful... just in case nobody told you today, I'm really proud of you. 💛",
+
+"Day 128: I wonder which memory of us you'll still be smiling about years from now. I hope there are too many to count. 📷",
+
+"Day 129: Even after the longest day, thinking about you feels like taking a deep, peaceful breath. 🍃",
+
+"Day 130: If my heart had a favorite sound, it would probably be your laugh. 🎶",
+
+"Day 131: Pumpkin, I hope you never lose the little spark that makes you... you. ✨",
+
+"Day 132: Sometimes I wish I could pause time—not because I'm afraid of tomorrow, but because today's moment with you already feels perfect. ⏳",
+
+"Day 133: You make me believe that the right person doesn't change your life overnight... they quietly make every day better. 🌅",
+
+"Day 134: If you're smiling while reading this, then this message has already done its job. 😄",
+
+"Day 135: No matter how many days pass, I'll never stop being thankful that our paths crossed. 🩵"
