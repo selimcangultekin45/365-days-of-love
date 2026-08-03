@@ -1,77 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>365 Days of Love ❤️</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selimcan ❤️ Lia</title>
 
-<style>
-body{
-margin:0;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-background:#ffdde1;
-font-family:Arial,sans-serif;
-text-align:center;
-}
-
-.box{
-background:white;
-padding:30px;
-border-radius:20px;
-box-shadow:0 0 20px rgba(0,0,0,.2);
-max-width:350px;
-}
-
-button{
-font-size:60px;
-border:none;
-background:none;
-cursor:pointer;
-}
-
-#message{
-margin-top:20px;
-font-size:22px;
-color:#e91e63;
-}
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="box">
-<h2>365 Days of Love ❤️</h2>
+    <div class="hearts"></div>
 
-<p>Tap the heart</p>
+    <main class="phone">
 
-<button onclick="showMessage()">❤️</button>
+        <section class="home">
 
-<div id="message"></div>
+            <h1>Selimcan ❤️ Lia</h1>
 
-</div>
+            <p class="subtitle">
+                Our little love story
+            </p>
 
-<script>
+            <div class="love-counter">
+                <h2>Together for</h2>
+                <div id="counter">
+                    Loading...
+                </div>
+            </div>
 
-const messages=[
-"You are my favorite person. ❤️",
-"You make every day brighter. ☀️",
-"I love you more than yesterday. ❤️"
-];
+            <button id="messageButton">
+                💌 Open Today's Message
+            </button>
 
-function showMessage(){
+            <div id="messageBox" class="hidden">
+                <div class="envelope">
+                    💌
+                </div>
 
-const today=Math.floor((Date.now()/86400000));
+                <p id="dailyMessage"></p>
+            </div>
 
-const message=messages[today%messages.length];
+            <div id="specialDay" class="hidden"></div>
 
-document.getElementById("message").innerHTML=message;
+        </section>
 
-}
+        <footer>
+            Made with ❤️ for Lia
+        </footer>
 
-</script>
+    </main>
+
+    <script src="messages.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
