@@ -655,3 +655,27 @@
 "Day 328: A little reminder today: never underestimate yourself. The person I see is someone strong, kind, and worth being proud of. 🌻",
 
 "Day 329: I don't just miss moments with you. I miss the feeling of being completely myself when I'm with you. 🫶",
+
+"Day 330: Looking back at everything we've shared, I realize my favorite memories are not always the biggest ones. They are the little moments that somehow became unforgettable. 🍃",
+
+"Day 331: My love, thank you for being someone I can laugh with, dream with, and simply be myself around. 🎈",
+
+"Day 332: One day, I hope we sit together and read these messages again, smiling at how much love was hidden inside every day. 📖",
+
+"Day 333: You are not just a chapter in my life. You are part of the story I want to keep writing. ✍️",
+
+"Day 334: Sometimes the best feeling is knowing there is someone out there who makes the world feel a little less lonely. 🌙",
+
+"Day 335: If I had to choose my favorite place in the world, I wouldn't name a city. I'd choose the place where I feel closest to you. 🧭",
+
+"Day 336: Beautiful, I hope you always protect the kindness in your heart. It is one of the things that makes you unforgettable. 🌺",
+
+"Day 337: The future doesn't scare me as much when I imagine facing it with you beside me. 🌄",
+
+"Day 338: I love that we can create memories from the simplest things. A conversation, a laugh, a small moment... somehow they become ours. 🎵",
+
+"Day 339: My sweetest thought today is that somewhere in this world, there is a person who changed my life just by existing. 🌍",
+
+"Day 340: No matter how many days pass, I hope we never forget the excitement of choosing each other in the beginning. ✨",
+
+"Day 341: We are getting closer to the end of this little journey, but I hope you know this was never just about counting days. It was about celebrating every reason you became special to me. 🤍",
