@@ -417,4 +417,27 @@
 "Day 209: Sometimes I wish I could press a button that instantly brings me to you... I'd probably wear it out in a week. 🚪✨",
 
 "Day 210: Loving you doesn't feel like something I have to remember. It feels as natural as breathing, and just as essential. 🩵",
-  
+
+"Day 211: I hope you never realize how often you make me smile... because the number would probably surprise you. 🌤️",
+
+"Day 212: Sweet soul, thank you for making my world feel a little warmer just by being part of it. 🧡",
+
+"Day 213: There's something comforting about knowing that no matter how the day goes, you're still my favorite thought before I fall asleep. 🌙",
+
+"Day 214: Happy New Year, my love! 🎆🥂 Another year means another 365 chances to laugh together, grow together, and create memories we'll tell stories about someday. My wish isn't for a perfect year—it's simply for a year with you in it. Cheers to us, to new adventures, and to the beautiful future waiting for us. ✨❤️",
+
+"Day 215: A brand-new year has begun, and somehow my favorite dream is still exactly the same... you. 🌅",
+
+"Day 216: My darling, if life ever feels too loud, remember that my heart will always be a quiet place waiting for you. 🌿",
+
+"Day 217: I don't think you notice the little things you do that make me fall for you again and again... and maybe that's what makes them so special. 💛",
+
+"Day 218: Some people search for magic. I just read our conversations again. 📱😊",
+
+"Day 219: Tiny question for you... what's one little thing I do that secretly makes you smile? Don't answer now—save it for the next time we're together. 😉",
+
+"Day 220: Every love story has beautiful chapters. My favorite one is the chapter where you walked into my life. 📖🤍",
+
+"Day 221: If I had one superpower, it wouldn't be flying or stopping time. It would be closing every mile between us whenever I missed you. 🌍",
+
+"Day 222: Here's a little reminder from someone who adores you: you are loved more deeply than you probably realize, and I hope you never forget that. 🫶💙",
