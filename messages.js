@@ -702,7 +702,7 @@
 
 "Day 352: You are proof that the best things in life are sometimes the ones we never knew we were searching for. 🍀",
 
-"Day 353: Before this journey ends, I want you to know something simple: every single day spent loving you was a day well spent. 🤍"
+"Day 353: Before this journey ends, I want you to know something simple: every single day spent loving you was a day well spent. 🤍",
 
 "Day 354: I wonder if you realize how many beautiful thoughts have your name somewhere inside them. Probably more than you would guess. 🌸",
 
