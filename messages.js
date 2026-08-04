@@ -722,7 +722,7 @@
 
 "Day 362: I hope you always remember that somewhere in this world, there is a heart that feels lucky because you exist. 🌍",
 
-"Day 363: Tomorrow and the days after this injourney completes... and I find myself thinking about the same thing I felt at the beginning: I'm grateful that it was you. 🤍"
+"Day 363: Tomorrow and the days after this message are not the end of our story. They are just more pages waiting to be written together. 📝",
 
 "Day 364: It's hard to believe we've almost reached the last page of this little journey. If you've read every message, then you've also carried a little piece of my heart with you every single day. I hope these words made you smile on difficult days, reminded you how deeply you're loved, and became a quiet place you could always come back to. Tomorrow may be the final message in this collection, but it will never be the final reason I choose you. 🌅",
 
