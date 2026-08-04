@@ -1,3 +1,6 @@
+    const month = today.getMonth() + 1;
+    const day = today.getDate();
+
 const startDate = new Date("June 2, 2026 00:00:00");
 
 
@@ -38,12 +41,23 @@ const messageText = document.getElementById("dailyMessage");
 button.addEventListener("click", function() {
 
     const today = new Date();
-    const dayNumber = today.getDate();
+    const difference = today - startDate;
+
+const dayNumber =
+Math.floor(difference / (1000 * 60 * 60 * 24)) + 1;
+
+    if (dayNumber > 365) {
 
     messageText.innerHTML =
-        messages[dayNumber - 1] ||
-        "Every day with you is special ❤️";
+    "The messages may have ended, but my love for you never will. ❤️<br><br>Thank you for reading every page of our little love story.";
 
+} else {
+
+    messageText.innerHTML =
+    messages[dayNumber - 1] ||
+    "Every day with you is special ❤️";
+
+}
 
     messageBox.classList.remove("hidden");
 
@@ -56,9 +70,6 @@ button.addEventListener("click", function() {
 function checkSpecialDays(){
 
     const today = new Date();
-
-    const month = today.getMonth() + 1;
-    const day = today.getDate();
 
 
     const special = document.getElementById("specialDay");
