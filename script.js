@@ -1,5 +1,4 @@
-    const month = today.getMonth() + 1;
-    const day = today.getDate();
+
 
 const startDate = new Date("June 2, 2026 00:00:00");
 
@@ -70,6 +69,9 @@ Math.floor(difference / (1000 * 60 * 60 * 24)) + 1;
 function checkSpecialDays(){
 
     const today = new Date();
+
+    const month = today.getMonth() + 1;
+const day = today.getDate();
 
 
     const special = document.getElementById("specialDay");
