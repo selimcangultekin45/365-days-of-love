@@ -38,6 +38,7 @@ const messageText = document.getElementById("dailyMessage");
 
 
 button.addEventListener("click", function() {
+    alert("Button works");
 
     const today = new Date();
     const difference = today - startDate;
