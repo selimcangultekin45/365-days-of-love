@@ -148,7 +148,7 @@ const messages = [
 
 "Day 74: Falling asleep is easier when I imagine the day we'll finally say goodnight without a screen between us. 🌙❤️",
 
-"Day 75: Seventy-five little letters later, one thing has never changed: if I had the chance to choose again, I'd still choose you without a second of hesitation. 🤍"
+"Day 75: Seventy-five little letters later, one thing has never changed: if I had the chance to choose again, I'd still choose you without a second of hesitation. 🤍",
 
 "Day 76: I hope one day we look back at these messages and smile because every dream we whispered to each other became a memory. ❤️",
 
