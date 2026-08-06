@@ -4,7 +4,6 @@ function updateCounter() {
     const now = new Date();
     const difference = now - startDate;
 
-    // Eğer startDate henüz gelmediyse eksi değerleri engeller
     if (difference < 0) {
         document.getElementById("counter").innerHTML = "Our story starts soon... ❤️";
         return;
@@ -31,7 +30,6 @@ button.addEventListener("click", function() {
 
     let dayNumber = Math.floor(difference / (1000 * 60 * 60 * 24)) + 1;
 
-    // Tarih öncesi veya 1'den küçükse 1. gün mesajını varsayılan yap
     if (dayNumber < 1) {
         dayNumber = 1;
     }
@@ -67,3 +65,4 @@ function checkSpecialDays() {
 }
 
 checkSpecialDays();
+        
