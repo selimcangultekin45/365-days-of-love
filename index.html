@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selimcan ❤️ Lia</title>
-    <link rel="stylesheet" href="style.css?v=8">
+    <link rel="stylesheet" href="style.css?v=11">
 </head>
 <body>
     <div class="container">
@@ -21,9 +21,11 @@
             <button id="viewPastButton" class="btn secondary-btn">📜 View Past Messages</button>
         </div>
 
+        <!-- Günün Mesajı Kutusu (Animasyonlu) -->
         <div id="messageBox" class="message-card" style="display:none;">
             <div class="envelope-icon">💌</div>
             <p id="dailyMessage"></p>
+            <div id="nextCountdown" class="next-countdown"></div>
         </div>
 
         <footer>
@@ -31,7 +33,7 @@
         </footer>
     </div>
 
-    <!-- Geçmiş Mesajlar Penceresi -->
+    <!-- Geçmiş Mesajlar & Favoriler Modal -->
     <div id="pastModal" class="modal" style="display:none;">
         <div class="modal-content">
             <div class="modal-header">
@@ -42,7 +44,7 @@
         </div>
     </div>
 
-    <script src="messages.js?v=8"></script>
-    <script src="script.js?v=8"></script>
+    <script src="messages.js?v=11"></script>
+    <script src="script.js?v=11"></script>
 </body>
 </html>
