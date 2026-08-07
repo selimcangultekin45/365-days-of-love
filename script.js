@@ -11,7 +11,8 @@ function updateCounter() {
 
     const counterElement = document.getElementById("counter");
     if (counterElement) {
-        counterElement.innerHTML = `${days} Gün, ${hours} Saat, ${minutes} Dakika`;
+        counterElement.innerHTML = `${days} Days, ${hours} Hours, ${minutes} Minutes`;
+        
     }
 }
 
