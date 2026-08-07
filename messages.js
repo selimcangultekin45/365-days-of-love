@@ -244,7 +244,7 @@ const messages = [
 
 "Day 122: Sometimes I wonder what I did to deserve someone as wonderful as you. Then I stop wondering and simply feel grateful. ❤️",
 
-"Day 123: No distance, no busy day, and no amount of time could ever make you feel less important to me. 🤍"
+"Day 123: No distance, no busy day, and no amount of time could ever make you feel less important to me. 🤍",
 
 "Day 124: I hope today gives you at least one moment that makes you stop and think, 'Life is beautiful.' 🌼",
 
