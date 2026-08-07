@@ -23,21 +23,19 @@
             <div id="counter" class="counter"></div>
         </div>
 
-        <!-- Butonlar -->
-        <button id="messageButton">✉️ Open Today's Message</button>
-        <button id="viewPastButton">📜 View Past Messages</button>
+        <!-- Orijinal Pembe Butonlar -->
+        <button id="messageButton" class="main-btn">💌 Open Today's Message</button>
+        <button id="viewPastButton" class="main-btn">📜 View Past Messages</button>
 
-        <!-- Mesaj Kartı (Açılır/Kapanır) -->
-        <div id="messageBox" style="display:none; margin-top: 20px;">
-            <div class="message-card">
-                <div class="card-envelope">💌</div>
-                <div id="dailyMessage" class="card-text"></div>
-                <div id="nextCountdown" class="card-countdown"></div>
-            </div>
+        <!-- Açılan Mesaj Kutusu -->
+        <div id="messageBox" class="message-card" style="display:none;">
+            <div class="card-envelope">💌</div>
+            <div id="dailyMessage" class="card-text"></div>
+            <div id="nextCountdown" class="card-countdown"></div>
         </div>
 
         <!-- Alt Bilgi -->
-        <div class="footer-text" style="margin-top: 25px;">Made with ❤️ for Lia</div>
+        <div class="footer-text">Made with ❤️ for Lia</div>
     </div>
 
     <!-- Geçmiş Mesajlar Penceresi -->
@@ -53,6 +51,7 @@
         </div>
     </div>
 
+    <!-- Scriptler -->
     <script src="messages.js"></script>
     <script src="script.js"></script>
 </body>
