@@ -17,26 +17,38 @@ function updateCounter() {
 setInterval(updateCounter, 1000);
 updateCounter();
 
-// 2. Takılma Yapmayan Kesintisiz Kalp Yağmuru
+// 2. Çift Yönlü Arka Plan Yağmuru (Aşağıdan Yukarı & Yukarıdan Aşağı)
 function createFloatingHearts() {
-    const hearts = ['❤️', '💖', '✨', '🌸', '💕', '⭐'];
-    const heartCount = 25;
+    const iconsUp = ['❤️', '💖', '🌸', '💕'];
+    const iconsDown = ['✨', '⭐', '💖', '🌸'];
 
-    for (let i = 0; i < heartCount; i++) {
+    // Aşağıdan Yukarıya Uçanlar
+    for (let i = 0; i < 18; i++) {
         const heart = document.createElement('div');
-        heart.className = 'bg-heart';
-        heart.innerText = hearts[Math.floor(Math.random() * hearts.length)];
+        heart.className = 'bg-heart-up';
+        heart.innerText = iconsUp[Math.floor(Math.random() * iconsUp.length)];
+        heart.style.left = Math.random() * 92 + 'vw';
         
-        // Ekranın yatayında rastgele konum
-        heart.style.left = Math.random() * 95 + 'vw';
-        
-        // Hız ve Başlama Zamanı Çeşitliliği
-        const duration = (Math.random() * 2.5 + 3.5); // 3.5s - 6s arası
-        const delay = (Math.random() * 4); // 0s - 4s arası gecikme
+        const duration = (Math.random() * 2 + 3.5);
+        const delay = (Math.random() * 4);
         
         heart.style.animationDuration = duration + 's';
         heart.style.animationDelay = delay + 's';
+        document.body.appendChild(heart);
+    }
+
+    // Yukarıdan Aşağıya İnenler
+    for (let i = 0; i < 18; i++) {
+        const heart = document.createElement('div');
+        heart.className = 'bg-heart-down';
+        heart.innerText = iconsDown[Math.floor(Math.random() * iconsDown.length)];
+        heart.style.left = Math.random() * 92 + 'vw';
         
+        const duration = (Math.random() * 2 + 4);
+        const delay = (Math.random() * 4);
+        
+        heart.style.animationDuration = duration + 's';
+        heart.style.animationDelay = delay + 's';
         document.body.appendChild(heart);
     }
 }
@@ -152,5 +164,5 @@ function renderPastMessages(currentDay) {
 if (closeModal && pastModal) {
     closeModal.addEventListener("click", function() { pastModal.style.display = "none"; });
     window.addEventListener("click", function(e) { if (e.target === pastModal) pastModal.style.display = "none"; });
-                                    }
-                
+                }
+            
