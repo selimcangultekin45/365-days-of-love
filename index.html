@@ -31,6 +31,16 @@
 
             <button id="messageButton">
                 💌 Open Today's Message
+                <!-- Mevcut butonun altına şunu ekle -->
+<button id="viewPastButton" style="margin-top: 10px; background: #ff758c; color: white; padding: 10px 20px; border: none; border-radius: 20px;">View Past Messages</button>
+
+<!-- Mesajların açılacağı pencere (Modal) -->
+<div id="pastMessagesModal" style="display:none; position:fixed; top:10%; left:5%; width:90%; height:80%; background:white; padding:20px; border-radius:15px; box-shadow:0 0 10px rgba(0,0,0,0.3); overflow-y:auto; z-index:1000;">
+    <h3>Past Messages</h3>
+    <button onclick="document.getElementById('pastMessagesModal').style.display='none'">Close</button>
+    <div id="pastMessagesList" style="margin-top:20px;"></div>
+</div>
+                
             </button>
 
             <div id="messageBox" class="hidden">
