@@ -1,4 +1,4 @@
- const relationshipStartDate = new Date("2026-06-02");
+const relationshipStartDate = new Date("2026-06-02");
 let isFilteringFavorites = false;
 
 // 1. Sayaç
@@ -29,24 +29,7 @@ function createFloatingHearts() {
 }
 createFloatingHearts();
 
-// 3. Kalp Konfeti Fonksiyonu
-function triggerHeartConfetti() {
-    if (typeof confetti === 'function') {
-        const defaults = {
-            spread: 360,
-            ticks: 100,
-            gravity: 0.8,
-            decay: 0.94,
-            startVelocity: 30,
-            shapes: ['heart'],
-            colors: ['#ff2a55', '#ff758f', '#ffb3c1', '#ffffff']
-        };
-        confetti({ ...defaults, particleCount: 40, scalar: 2 });
-        confetti({ ...defaults, particleCount: 25, scalar: 1.5 });
-    }
-}
-
-// 4. Geri Sayım
+// 3. Geri Sayım
 function updateNextMessageCountdown() {
     const now = new Date();
     const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
@@ -61,7 +44,7 @@ function updateNextMessageCountdown() {
 }
 setInterval(updateNextMessageCountdown, 1000);
 
-// 5. Günün Mesajı ve Butonu
+// 4. Günün Mesajı
 const messageButton = document.getElementById("messageButton");
 const messageBox = document.getElementById("messageBox");
 const dailyMessage = document.getElementById("dailyMessage");
@@ -86,12 +69,10 @@ if (messageButton) {
             messageBox.style.display = "block";
             updateNextMessageCountdown();
         }
-        
-        triggerHeartConfetti();
     });
 }
 
-// 6. Favori Hafızası
+// 5. Favori Hafızası
 function getFavorites() {
     return JSON.parse(localStorage.getItem("fav_messages") || "[]");
 }
@@ -106,7 +87,7 @@ function toggleFavorite(index) {
     localStorage.setItem("fav_messages", JSON.stringify(favs));
 }
 
-// 7. Geçmiş Mesajlar
+// 6. Geçmiş Mesajlar ve Filtreleme
 const viewPastButton = document.getElementById("viewPastButton");
 const pastModal = document.getElementById("pastModal");
 const closeModal = document.getElementById("closeModal");
@@ -129,6 +110,7 @@ if (btnAll && btnFav) {
         updateFilterButtons();
         renderPastMessages();
     });
+
     btnFav.addEventListener("click", function() {
         isFilteringFavorites = true;
         updateFilterButtons();
@@ -151,21 +133,30 @@ function updateFilterButtons() {
 function renderPastMessages() {
     if (!pastMessagesList) return;
     pastMessagesList.innerHTML = "";
+
     const favs = getFavorites();
     const today = new Date();
     const currentDay = Math.floor((today - relationshipStartDate) / (1000 * 60 * 60 * 24)) + 1;
+
     let hasMessages = false;
 
     if (typeof messages !== 'undefined' && Array.isArray(messages)) {
         for (let i = 0; i < currentDay && i < messages.length; i++) {
             const isFav = favs.includes(i);
+
             if (isFilteringFavorites && !isFav) continue;
+
             hasMessages = true;
+            
             let rawMsg = messages[i];
             let cleanText = rawMsg.replace(/^Day\s*\d+:\s*/i, '');
+
             const item = document.createElement("div");
             item.className = "message-item";
-            item.innerHTML = `<div><strong style="color: #ff2a55;">Day ${i + 1}:</strong> ${cleanText}</div><span class="fav-heart" data-index="${i}">${isFav ? "❤️" : "🤍"}</span>`;
+            item.innerHTML = `
+                <div><strong style="color: #ff2a55;">Day ${i + 1}:</strong> ${cleanText}</div>
+                <span class="fav-heart" data-index="${i}">${isFav ? "❤️" : "🤍"}</span>
+            `;
             pastMessagesList.appendChild(item);
         }
     }
@@ -188,5 +179,4 @@ function renderPastMessages() {
 if (closeModal && pastModal) {
     closeModal.addEventListener("click", () => pastModal.style.display = "none");
     window.addEventListener("click", (e) => { if (e.target === pastModal) pastModal.style.display = "none"; });
-                               }
-            
+}
