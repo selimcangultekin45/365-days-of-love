@@ -17,15 +17,15 @@ function updateCounter() {
 setInterval(updateCounter, 1000);
 updateCounter();
 
-// 2. Arka Plan Kalp Yağmuru
+// 2. Yoğun Arka Plan Kalp & Yıldız Yağmuru (30 Adet)
 function createFloatingHearts() {
-    const hearts = ['❤️', '💖', '🌸', '✨'];
-    for (let i = 0; i < 12; i++) {
+    const hearts = ['❤️', '💖', '✨', '🌸', '💕', '⭐'];
+    for (let i = 0; i < 30; i++) { // Sayı 12'den 30'a çıkarıldı
         const heart = document.createElement('div');
         heart.className = 'bg-heart';
         heart.innerText = hearts[Math.floor(Math.random() * hearts.length)];
         heart.style.left = Math.random() * 100 + 'vw';
-        heart.style.animationDuration = (Math.random() * 3 + 5) + 's';
+        heart.style.animationDuration = (Math.random() * 3 + 4) + 's'; // Biraz daha hızlı yükselme
         heart.style.animationDelay = (Math.random() * 5) + 's';
         document.body.appendChild(heart);
     }
@@ -49,7 +49,7 @@ function updateNextMessageCountdown() {
 }
 setInterval(updateNextMessageCountdown, 1000);
 
-// 4. Günün Mesajını Açma (Animasyon ile)
+// 4. Günün Mesajını Açma
 const messageButton = document.getElementById("messageButton");
 const messageBox = document.getElementById("messageBox");
 const dailyMessage = document.getElementById("dailyMessage");
@@ -70,14 +70,13 @@ if (messageButton) {
         }
 
         if (messageBox) {
-            // Animasyonu tetiklemek için önce display block yapıyoruz
             messageBox.style.display = "block";
             updateNextMessageCountdown();
         }
     });
 }
 
-// 5. Favoriler Mantığı (Cihaz Hafızasında Tutar)
+// 5. Favoriler Mantığı
 function getFavorites() {
     return JSON.parse(localStorage.getItem("fav_messages") || "[]");
 }
@@ -85,9 +84,9 @@ function getFavorites() {
 function toggleFavorite(index) {
     let favs = getFavorites();
     if (favs.includes(index)) {
-        favs = favs.filter(i => i !== index); // Favorilerden çıkar
+        favs = favs.filter(i => i !== index);
     } else {
-        favs.push(index); // Favorilere ekle
+        favs.push(index);
     }
     localStorage.setItem("fav_messages", JSON.stringify(favs));
 }
@@ -119,7 +118,7 @@ function renderPastMessages(currentDay) {
             item.className = "message-item";
 
             const isFav = favs.includes(i);
-            const heartIcon = isFav ? "❤️" : "🤍"; // Seçiliyse kırmızı, değilse beyaz kalp
+            const heartIcon = isFav ? "❤️" : "🤍";
 
             item.innerHTML = `
                 <div>
@@ -130,18 +129,16 @@ function renderPastMessages(currentDay) {
             pastMessagesList.appendChild(item);
         }
 
-        // Tıklanan kalbi kaydet
         document.querySelectorAll(".fav-heart").forEach(heart => {
             heart.addEventListener("click", function() {
                 const index = parseInt(this.getAttribute("data-index"));
                 toggleFavorite(index);
-                renderPastMessages(currentDay); 
+                renderPastMessages(currentDay);
             });
         });
     }
 }
 
-// Pencere Kapatma İşlemleri
 if (closeModal && pastModal) {
     closeModal.addEventListener("click", function() { pastModal.style.display = "none"; });
     window.addEventListener("click", function(e) { if (e.target === pastModal) pastModal.style.display = "none"; });
