@@ -17,16 +17,26 @@ function updateCounter() {
 setInterval(updateCounter, 1000);
 updateCounter();
 
-// 2. Yoğun Arka Plan Kalp & Yıldız Yağmuru (30 Adet)
+// 2. Takılma Yapmayan Kesintisiz Kalp Yağmuru
 function createFloatingHearts() {
     const hearts = ['❤️', '💖', '✨', '🌸', '💕', '⭐'];
-    for (let i = 0; i < 30; i++) { // Sayı 12'den 30'a çıkarıldı
+    const heartCount = 25;
+
+    for (let i = 0; i < heartCount; i++) {
         const heart = document.createElement('div');
         heart.className = 'bg-heart';
         heart.innerText = hearts[Math.floor(Math.random() * hearts.length)];
-        heart.style.left = Math.random() * 100 + 'vw';
-        heart.style.animationDuration = (Math.random() * 3 + 4) + 's'; // Biraz daha hızlı yükselme
-        heart.style.animationDelay = (Math.random() * 5) + 's';
+        
+        // Ekranın yatayında rastgele konum
+        heart.style.left = Math.random() * 95 + 'vw';
+        
+        // Hız ve Başlama Zamanı Çeşitliliği
+        const duration = (Math.random() * 2.5 + 3.5); // 3.5s - 6s arası
+        const delay = (Math.random() * 4); // 0s - 4s arası gecikme
+        
+        heart.style.animationDuration = duration + 's';
+        heart.style.animationDelay = delay + 's';
+        
         document.body.appendChild(heart);
     }
 }
@@ -91,7 +101,7 @@ function toggleFavorite(index) {
     localStorage.setItem("fav_messages", JSON.stringify(favs));
 }
 
-// 6. Geçmiş Mesajlar & Kalpleme Ekranı
+// 6. Geçmiş Mesajlar Ekranı
 const viewPastButton = document.getElementById("viewPastButton");
 const pastModal = document.getElementById("pastModal");
 const closeModal = document.getElementById("closeModal");
@@ -142,4 +152,5 @@ function renderPastMessages(currentDay) {
 if (closeModal && pastModal) {
     closeModal.addEventListener("click", function() { pastModal.style.display = "none"; });
     window.addEventListener("click", function(e) { if (e.target === pastModal) pastModal.style.display = "none"; });
-}
+                                    }
+                
