@@ -31,6 +31,8 @@
 
             <button id="messageButton">
                 💌 Open Today's Message
+                <button id="viewPastButton" style="margin-top: 10px; background: #ff758c; color: white; padding: 10px 20px; border: none; border-radius: 20px; cursor: pointer;">📜 View Past Messages</button>
+            
                 <!-- Mevcut butonun altına şunu ekle -->
 <button id="viewPastButton" style="margin-top: 10px; background: #ff758c; color: white; padding: 10px 20px; border: none; border-radius: 20px;">View Past Messages</button>
 
@@ -61,11 +63,19 @@
 
     </main>
 
-    <script src="messages.js?v=2"></script>
-<script src="script.js?v=2"></script>
-    
+    <
+    <script src="messages.js?v=6"></script>
+<script src="script.js?v=6"></script>
+        
                     
     
+ <div id="pastModal" style="display:none; position:fixed; top:10%; left:5%; width:90%; height:80%; background:white; padding:20px; border-radius:15px; box-shadow:0 0 10px rgba(0,0,0,0.3); overflow-y:auto; z-index:1000; color: #333;">
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; padding-bottom: 10px;">
+        <h3 style="margin: 0; color: #ff4757;">Past Messages</h3>
+        <button id="closeModal" style="background: #ff4757; color: white; border: none; padding: 5px 12px; border-radius: 10px; cursor: pointer;">X</button>
+    </div>
+    <div id="pastMessagesList" style="margin-top:15px;"></div>
+ </div>
     
 </body>
 </html>
