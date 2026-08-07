@@ -13,34 +13,63 @@ body {
     align-items: center;
     padding: 20px;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden; /* Kenarlardan taşan ikonları tamamen gizler */
 }
 
-/* Sayfa İlk Açıldığında Gizli, Ekranın En Altından En Tepesine Uçan Kalpler */
-.bg-heart {
+/* 1. Aşağıdan Yukarıya Uçan Kalpler */
+.bg-heart-up {
     position: fixed;
     color: rgba(255, 255, 255, 0.85);
     font-size: 24px;
     user-select: none;
     pointer-events: none;
-    opacity: 0; /* Başlangıçta ekranda donuk durmalarını engeller */
+    opacity: 0;
     animation: floatUp 4.5s linear infinite;
     z-index: 1;
 }
 
 @keyframes floatUp {
     0% { 
-        transform: translateY(110vh) scale(0.5) rotate(0deg); 
+        transform: translateY(115vh) scale(0.5) rotate(0deg); 
         opacity: 0; 
     }
-    10% { 
-        opacity: 0.9; 
+    15% { 
+        opacity: 0.95; 
     }
     85% { 
-        opacity: 0.9; 
+        opacity: 0.95; 
     }
     100% { 
-        transform: translateY(-30vh) scale(1.4) rotate(35deg); /* Ekranın tamamen yukarısına çıkar */
+        transform: translateY(-35vh) scale(1.3) rotate(35deg); 
+        opacity: 0; 
+    }
+}
+
+/* 2. Yukarıdan Aşağıya İnen Yıldızlar & Kalpler */
+.bg-heart-down {
+    position: fixed;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 22px;
+    user-select: none;
+    pointer-events: none;
+    opacity: 0;
+    animation: floatDown 5s linear infinite;
+    z-index: 1;
+}
+
+@keyframes floatDown {
+    0% { 
+        transform: translateY(-35vh) scale(0.5) rotate(0deg); 
+        opacity: 0; 
+    }
+    15% { 
+        opacity: 0.95; 
+    }
+    85% { 
+        opacity: 0.95; 
+    }
+    100% { 
+        transform: translateY(115vh) scale(1.3) rotate(-35deg); 
         opacity: 0; 
     }
 }
