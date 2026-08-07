@@ -1,82 +1,48 @@
-<!DOCTYPE html> 
-<html lang="en">
+<!DOCTYPE html>
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selimcan ❤️ Lia</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <div class="container">
+        <h1>Selimcan ❤️ Lia</h1>
+        <p class="subtitle">Our little love story</p>
 
-    <div class="hearts"></div>
+        <div class="counter-box">
+            <h2>Together for</h2>
+            <div id="counter">Loading...</div>
+        </div>
 
-    <main class="phone">
+        <div class="buttons-container">
+            <button id="messageButton" class="btn">💌 Open Today's Message</button>
+            <button id="viewPastButton" class="btn secondary-btn">📜 View Past Messages</button>
+        </div>
 
-        <section class="home">
+        <div id="messageBox" class="message-card" style="display:none;">
+            <div class="envelope-icon">💌</div>
+            <p id="dailyMessage"></p>
+        </div>
 
-            <h1>Selimcan ❤️ Lia</h1>
-
-            <p class="subtitle">
-                Our little love story
-            </p>
-
-            <div class="love-counter">
-                <h2>Together for</h2>
-                <div id="counter">
-                    Loading...
+        <!-- Geçmiş Mesajlar Penceresi -->
+        <div id="pastModal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Past Messages</h3>
+                    <span id="closeModal" class="close-btn">&times;</span>
                 </div>
+                <div id="pastMessagesList"></div>
             </div>
-
-            <button id="messageButton">
-                💌 Open Today's Message
-                <button id="viewPastButton" style="margin-top: 10px; background: #ff758c; color: white; padding: 10px 20px; border: none; border-radius: 20px; cursor: pointer;">📜 View Past Messages</button>
-            
-                <!-- Mevcut butonun altına şunu ekle -->
-<button id="viewPastButton" style="margin-top: 10px; background: #ff758c; color: white; padding: 10px 20px; border: none; border-radius: 20px;">View Past Messages</button>
-
-<!-- Mesajların açılacağı pencere (Modal) -->
-<div id="pastMessagesModal" style="display:none; position:fixed; top:10%; left:5%; width:90%; height:80%; background:white; padding:20px; border-radius:15px; box-shadow:0 0 10px rgba(0,0,0,0.3); overflow-y:auto; z-index:1000;">
-    <h3>Past Messages</h3>
-    <button onclick="document.getElementById('pastMessagesModal').style.display='none'">Close</button>
-    <div id="pastMessagesList" style="margin-top:20px;"></div>
-</div>
-                
-            </button>
-
-            <div id="messageBox" class="hidden">
-                <div class="envelope">
-                    💌
-                </div>
-
-                <p id="dailyMessage"></p>
-            </div>
-
-            <div id="specialDay" class="hidden"></div>
-
-        </section>
+        </div>
 
         <footer>
             Made with ❤️ for Lia
         </footer>
-
-    </main>
-
-    <
-    <script src="messages.js?v=6"></script>
-<script src="script.js?v=6"></script>
-        
-                    
-    
- <div id="pastModal" style="display:none; position:fixed; top:10%; left:5%; width:90%; height:80%; background:white; padding:20px; border-radius:15px; box-shadow:0 0 10px rgba(0,0,0,0.3); overflow-y:auto; z-index:1000; color: #333;">
-    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; padding-bottom: 10px;">
-        <h3 style="margin: 0; color: #ff4757;">Past Messages</h3>
-        <button id="closeModal" style="background: #ff4757; color: white; border: none; padding: 5px 12px; border-radius: 10px; cursor: pointer;">X</button>
     </div>
-    <div id="pastMessagesList" style="margin-top:15px;"></div>
- </div>
-    
+
+    <script src="messages.js?v=7"></script>
+    <script src="script.js?v=7"></script>
 </body>
 </html>
- 
