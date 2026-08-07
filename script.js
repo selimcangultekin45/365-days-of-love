@@ -1,6 +1,6 @@
 const relationshipStartDate = new Date("2026-06-02");
 
-// Sayaç Fonksiyonu
+// 1. Birliktelik Sayacı
 function updateCounter() {
     const today = new Date();
     const difference = today - relationshipStartDate;
@@ -17,10 +17,10 @@ function updateCounter() {
 setInterval(updateCounter, 1000);
 updateCounter();
 
-// Arka Plan Kalp Yağmuru Efekti
+// 2. Arka Plan Kalp Yağmuru
 function createFloatingHearts() {
     const hearts = ['❤️', '💖', '🌸', '✨'];
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < 12; i++) {
         const heart = document.createElement('div');
         heart.className = 'bg-heart';
         heart.innerText = hearts[Math.floor(Math.random() * hearts.length)];
@@ -32,7 +32,24 @@ function createFloatingHearts() {
 }
 createFloatingHearts();
 
-// Bugünün Mesajını Aç
+// 3. Sonraki Mesaj İçin Canlı Geri Sayım
+function updateNextMessageCountdown() {
+    const now = new Date();
+    const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+    const diff = tomorrow - now;
+
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / 1000 / 60) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    const countdownEl = document.getElementById("nextCountdown");
+    if (countdownEl) {
+        countdownEl.innerText = `⏳ Next message unlocks in: ${hours}h ${minutes}m ${seconds}s`;
+    }
+}
+setInterval(updateNextMessageCountdown, 1000);
+
+// 4. Günün Mesajını Açma (Animasyon ile)
 const messageButton = document.getElementById("messageButton");
 const messageBox = document.getElementById("messageBox");
 const dailyMessage = document.getElementById("dailyMessage");
@@ -49,16 +66,33 @@ if (messageButton) {
         if (typeof messages !== 'undefined' && Array.isArray(messages) && messages[dayNumber - 1]) {
             dailyMessage.innerText = messages[dayNumber - 1];
         } else {
-            dailyMessage.innerText = "Mesaj dosyası okunamadı.";
+            dailyMessage.innerText = "Mesaj okunamadı.";
         }
 
         if (messageBox) {
+            // Animasyonu tetiklemek için önce display block yapıyoruz
             messageBox.style.display = "block";
+            updateNextMessageCountdown();
         }
     });
 }
 
-// Geçmiş Mesajlar Penceresi
+// 5. Favoriler Mantığı (Cihaz Hafızasında Tutar)
+function getFavorites() {
+    return JSON.parse(localStorage.getItem("fav_messages") || "[]");
+}
+
+function toggleFavorite(index) {
+    let favs = getFavorites();
+    if (favs.includes(index)) {
+        favs = favs.filter(i => i !== index); // Favorilerden çıkar
+    } else {
+        favs.push(index); // Favorilere ekle
+    }
+    localStorage.setItem("fav_messages", JSON.stringify(favs));
+}
+
+// 6. Geçmiş Mesajlar & Kalpleme Ekranı
 const viewPastButton = document.getElementById("viewPastButton");
 const pastModal = document.getElementById("pastModal");
 const closeModal = document.getElementById("closeModal");
@@ -70,30 +104,45 @@ if (viewPastButton && pastModal) {
         const diffTime = today - relationshipStartDate;
         let currentDay = Math.floor(diffTime / (1000 * 60 * 60 * 24)) + 1;
 
-        pastMessagesList.innerHTML = "";
-
-        if (typeof messages !== 'undefined' && Array.isArray(messages)) {
-            for (let i = 0; i < currentDay && i < messages.length; i++) {
-                const item = document.createElement("div");
-                item.style.padding = "10px 0";
-                item.style.borderBottom = "1px solid #fff0f3";
-                item.style.fontSize = "14px";
-                item.innerHTML = `<strong style="color: #ff2a55;">Day ${i + 1}:</strong> ${messages[i]}`;
-                pastMessagesList.appendChild(item);
-            }
-        }
+        renderPastMessages(currentDay);
         pastModal.style.display = "flex";
     });
 }
 
-if (closeModal && pastModal) {
-    closeModal.addEventListener("click", function() {
-        pastModal.style.display = "none";
-    });
+function renderPastMessages(currentDay) {
+    pastMessagesList.innerHTML = "";
+    const favs = getFavorites();
 
-    window.addEventListener("click", function(event) {
-        if (event.target === pastModal) {
-            pastModal.style.display = "none";
+    if (typeof messages !== 'undefined' && Array.isArray(messages)) {
+        for (let i = 0; i < currentDay && i < messages.length; i++) {
+            const item = document.createElement("div");
+            item.className = "message-item";
+
+            const isFav = favs.includes(i);
+            const heartIcon = isFav ? "❤️" : "🤍"; // Seçiliyse kırmızı, değilse beyaz kalp
+
+            item.innerHTML = `
+                <div>
+                    <strong style="color: #ff2a55;">Day ${i + 1}:</strong> ${messages[i]}
+                </div>
+                <span class="fav-heart" data-index="${i}">${heartIcon}</span>
+            `;
+            pastMessagesList.appendChild(item);
         }
-    });
+
+        // Tıklanan kalbi kaydet
+        document.querySelectorAll(".fav-heart").forEach(heart => {
+            heart.addEventListener("click", function() {
+                const index = parseInt(this.getAttribute("data-index"));
+                toggleFavorite(index);
+                renderPastMessages(currentDay); 
+            });
+        });
+    }
+}
+
+// Pencere Kapatma İşlemleri
+if (closeModal && pastModal) {
+    closeModal.addEventListener("click", function() { pastModal.style.display = "none"; });
+    window.addEventListener("click", function(e) { if (e.target === pastModal) pastModal.style.display = "none"; });
 }
