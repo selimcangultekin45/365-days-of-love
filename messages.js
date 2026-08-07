@@ -298,7 +298,7 @@ const messages = [
 
 "Day 149: I don't think you fully realize how much peace your presence brings into my life. Just knowing you're here somehow makes everything feel a little lighter. 🕊️",
 
-"Day 150: One hundred and fifty days later, there's something I've realized... love isn't only found in grand gestures or perfect moments. It's hidden in the little things: wondering if you've eaten, smiling at your name on my screen, wishing you were beside me during an ordinary day, and thanking life for bringing you into mine. If I could start this journey all over again, I'd still choose you—every single time. 📖💙"
+"Day 150: One hundred and fifty days later, there's something I've realized... love isn't only found in grand gestures or perfect moments. It's hidden in the little things: wondering if you've eaten, smiling at your name on my screen, wishing you were beside me during an ordinary day, and thanking life for bringing you into mine. If I could start this journey all over again, I'd still choose you—every single time. 📖💙",
 
 "Day 151: You don't just make me feel loved—you make me feel understood, and that's a gift I'll never take for granted. 🌿",
 
@@ -394,7 +394,7 @@ const messages = [
 
 "Day 197: Darling, you're beautiful in ways mirrors could never show. The best parts of you are the ones only the heart can see. 🌹",
 
-"Day 198: If loving you had a sound, I think it would be the quiet heartbeat I feel whenever you cross my mind. ❤️"
+"Day 198: If loving you had a sound, I think it would be the quiet heartbeat I feel whenever you cross my mind. ❤️",
 
 "Day 199: Can I confess something? Sometimes I reread our conversations just to relive the feeling of having you close, even for a little while. 📱🤍",
 
