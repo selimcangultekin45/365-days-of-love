@@ -268,7 +268,7 @@ const messages = [
 
 "Day 134: If you're smiling while reading this, then this message has already done its job. 😄",
 
-"Day 135: No matter how many days pass, I'll never stop being thankful that our paths crossed. 🩵"
+"Day 135: No matter how many days pass, I'll never stop being thankful that our paths crossed. 🩵",
 
 "Day 136: I hope you laughed today. And if you didn't, save one smile for me. 🌤️",
 
