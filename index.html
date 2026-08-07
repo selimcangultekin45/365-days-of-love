@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,19 +23,21 @@
             <div id="counter" class="counter"></div>
         </div>
 
-        <!-- Pembe Butonlar -->
-        <button id="messageButton" class="btn btn-primary">✉️ Open Today's Message</button>
-        <button id="viewPastButton" class="btn btn-secondary">📜 View Past Messages</button>
+        <!-- Butonlar -->
+        <button id="messageButton">✉️ Open Today's Message</button>
+        <button id="viewPastButton">📜 View Past Messages</button>
 
-        <!-- Açılan Mesaj Kutusu -->
-        <div id="messageBox" class="message-card" style="display:none;">
-            <div class="card-envelope">💌</div>
-            <div id="dailyMessage" class="card-text"></div>
-            <div id="nextCountdown" class="card-countdown"></div>
+        <!-- Mesaj Kartı (Açılır/Kapanır) -->
+        <div id="messageBox" style="display:none; margin-top: 20px;">
+            <div class="message-card">
+                <div class="card-envelope">💌</div>
+                <div id="dailyMessage" class="card-text"></div>
+                <div id="nextCountdown" class="card-countdown"></div>
+            </div>
         </div>
 
         <!-- Alt Bilgi -->
-        <div class="footer-text">Made with ❤️ for Lia</div>
+        <div class="footer-text" style="margin-top: 25px;">Made with ❤️ for Lia</div>
     </div>
 
     <!-- Geçmiş Mesajlar Penceresi -->
@@ -51,7 +53,6 @@
         </div>
     </div>
 
-    <!-- Mesaj Verileri ve Ana Kodlar -->
     <script src="messages.js"></script>
     <script src="script.js"></script>
 </body>
