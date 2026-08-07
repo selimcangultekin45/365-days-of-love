@@ -45,3 +45,26 @@ if (button) {
         }
     });
                                }
+// Geçmiş Mesajları Gösteren Fonksiyon
+const viewPastButton = document.getElementById("viewPastButton");
+const pastMessagesModal = document.getElementById("pastMessagesModal");
+const pastMessagesList = document.getElementById("pastMessagesList");
+
+viewPastButton.addEventListener("click", function() {
+    const today = new Date();
+    const diffTime = today - relationshipStartDate;
+    let currentDay = Math.floor(diffTime / (1000 * 60 * 60 * 24)) + 1;
+
+    pastMessagesList.innerHTML = ""; // Listeyi temizle
+
+    // Bugüne kadar olan tüm mesajları listele
+    for (let i = 0; i < currentDay && i < messages.length; i++) {
+        const p = document.createElement("p");
+        p.style.borderBottom = "1px solid #eee";
+        p.style.padding = "10px 0";
+        p.innerHTML = `<strong>Day ${i + 1}:</strong> ${messages[i]}`;
+        pastMessagesList.appendChild(p);
+    }
+
+    pastMessagesModal.style.display = "block";
+});
