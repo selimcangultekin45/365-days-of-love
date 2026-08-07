@@ -1,7 +1,6 @@
-// İlişkinizin Gerçek Başlangıç Tarihi
 const relationshipStartDate = new Date("2026-06-02");
 
-// 1. Sayaç Fonksiyonu
+// Sayaç Fonksiyonu
 function updateCounter() {
     const today = new Date();
     const difference = today - relationshipStartDate;
@@ -18,7 +17,22 @@ function updateCounter() {
 setInterval(updateCounter, 1000);
 updateCounter();
 
-// 2. Bugünkü Mesajı Açma Butonu
+// Arka Plan Kalp Yağmuru Efekti
+function createFloatingHearts() {
+    const hearts = ['❤️', '💖', '🌸', '✨'];
+    for (let i = 0; i < 15; i++) {
+        const heart = document.createElement('div');
+        heart.className = 'bg-heart';
+        heart.innerText = hearts[Math.floor(Math.random() * hearts.length)];
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDuration = (Math.random() * 3 + 5) + 's';
+        heart.style.animationDelay = (Math.random() * 5) + 's';
+        document.body.appendChild(heart);
+    }
+}
+createFloatingHearts();
+
+// Bugünün Mesajını Aç
 const messageButton = document.getElementById("messageButton");
 const messageBox = document.getElementById("messageBox");
 const dailyMessage = document.getElementById("dailyMessage");
@@ -35,7 +49,7 @@ if (messageButton) {
         if (typeof messages !== 'undefined' && Array.isArray(messages) && messages[dayNumber - 1]) {
             dailyMessage.innerText = messages[dayNumber - 1];
         } else {
-            dailyMessage.innerText = "Mesaj okunamadı. messages.js dosyanı kontrol et.";
+            dailyMessage.innerText = "Mesaj dosyası okunamadı.";
         }
 
         if (messageBox) {
@@ -44,7 +58,7 @@ if (messageButton) {
     });
 }
 
-// 3. Geçmiş Mesajlar (Modal) Butonu
+// Geçmiş Mesajlar Penceresi
 const viewPastButton = document.getElementById("viewPastButton");
 const pastModal = document.getElementById("pastModal");
 const closeModal = document.getElementById("closeModal");
@@ -56,26 +70,22 @@ if (viewPastButton && pastModal) {
         const diffTime = today - relationshipStartDate;
         let currentDay = Math.floor(diffTime / (1000 * 60 * 60 * 24)) + 1;
 
-        pastMessagesList.innerHTML = ""; // Önceki içerikleri temizle
+        pastMessagesList.innerHTML = "";
 
         if (typeof messages !== 'undefined' && Array.isArray(messages)) {
             for (let i = 0; i < currentDay && i < messages.length; i++) {
                 const item = document.createElement("div");
-                item.style.padding = "10px";
-                item.style.borderBottom = "1px solid #ffe3e8";
-                item.style.textAlign = "left";
-                item.innerHTML = `<strong style="color: #ff4757;">Day ${i + 1}:</strong> ${messages[i]}`;
+                item.style.padding = "10px 0";
+                item.style.borderBottom = "1px solid #fff0f3";
+                item.style.fontSize = "14px";
+                item.innerHTML = `<strong style="color: #ff2a55;">Day ${i + 1}:</strong> ${messages[i]}`;
                 pastMessagesList.appendChild(item);
             }
-        } else {
-            pastMessagesList.innerHTML = "<p>Mesajlar yüklenemedi.</p>";
         }
-
         pastModal.style.display = "flex";
     });
 }
 
-// 4. Modal Kapatma Düğmeleri
 if (closeModal && pastModal) {
     closeModal.addEventListener("click", function() {
         pastModal.style.display = "none";
