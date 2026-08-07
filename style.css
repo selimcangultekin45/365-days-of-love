@@ -13,7 +13,7 @@ body {
     align-items: center;
     padding: 20px;
     position: relative;
-    overflow: hidden; /* Kenarlardan taşan ikonları tamamen gizler */
+    overflow: hidden;
 }
 
 /* 1. Aşağıdan Yukarıya Uçan Kalpler */
@@ -45,13 +45,14 @@ body {
     }
 }
 
-/* 2. Yukarıdan Aşağıya İnen Yıldızlar & Kalpler */
+/* 2. Yukarıdan Aşağıya İnen Yıldızlar & Kalpler (Düzeltildi) */
 .bg-heart-down {
     position: fixed;
     color: rgba(255, 255, 255, 0.85);
     font-size: 22px;
     user-select: none;
     pointer-events: none;
+    top: -40px; /* Ekranın hemen üst çizgisine hizalar */
     opacity: 0;
     animation: floatDown 5s linear infinite;
     z-index: 1;
@@ -59,7 +60,7 @@ body {
 
 @keyframes floatDown {
     0% { 
-        transform: translateY(-35vh) scale(0.5) rotate(0deg); 
+        transform: translateY(0) scale(0.5) rotate(0deg); 
         opacity: 0; 
     }
     15% { 
@@ -266,3 +267,4 @@ h1 {
 .fav-heart:active { transform: scale(1.3); }
 
 footer { margin-top: 20px; font-size: 12px; color: #aaa; }
+    
