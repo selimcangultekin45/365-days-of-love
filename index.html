@@ -3,29 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selimcan & Lia | Our 365 Days ❤️</title>
+    <title>Selimcan ❤️ Lia</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💌</text></svg>">
-    <meta property="og:title" content="Selimcan & Lia ❤️">
-    <meta property="og:description" content="A special message for you every single day for 365 days.">
+    <meta property="og:title" content="Selimcan ❤️ Lia">
+    <meta property="og:description" content="Our little love story">
     <meta property="og:image" content="https://em-content.zobj.net/source/apple/354/red-heart_2764-fe0f.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
-        <h1>Our 365 Days</h1>
-        <div id="counter" class="counter"></div>
-        <button id="messageButton">Open Today's Message ❤️</button>
-        <button id="viewPastButton">View Past Messages</button>
-    </div>
+        <!-- Başlık Alanı -->
+        <h1 class="main-title">Selimcan <span class="heart-icon">❤️</span> Lia</h1>
+        <p class="sub-title">Our little love story</p>
 
-    <div id="messageBox" class="modal" style="display:none;">
-        <div class="modal-content">
-            <h2 id="dailyMessage"></h2>
-            <div id="nextCountdown" style="font-size: 0.8em; color: #666; margin-top: 15px;"></div>
+        <!-- Sayaç Kutusu -->
+        <div class="counter-box">
+            <span class="together-label">TOGETHER FOR</span>
+            <div id="counter" class="counter"></div>
         </div>
+
+        <!-- Butonlar -->
+        <button id="messageButton">💌 Open Today's Message</button>
+        <button id="viewPastButton">📜 View Past Messages</button>
+
+        <!-- Açılan Mesaj Kutusu -->
+        <div id="messageBox" class="message-card" style="display:none;">
+            <div class="card-envelope">💌</div>
+            <div id="dailyMessage" class="card-text"></div>
+            <div id="nextCountdown" class="card-countdown"></div>
+        </div>
+
+        <!-- Alt Bilgi -->
+        <div class="footer-text">Made with ❤️ for Lia</div>
     </div>
 
+    <!-- Geçmiş Mesajlar Penceresi (Modal) -->
     <div id="pastModal" class="modal" style="display:none;">
         <div class="modal-content">
             <span id="closeModal" class="close">&times;</span>
