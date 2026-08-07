@@ -251,3 +251,24 @@ footer { margin-top: 20px; font-size: 12px; color: #aaa; }
     color: white;
     border-color: #ff2a55;
 }
+/* Pembe Buton Garantileyici Stil */
+button, .pink-btn {
+    display: block !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    margin: 12px auto !important;
+    padding: 14px 20px !important;
+    background: linear-gradient(135deg, #ff4b72, #ff758f) !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 25px !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    box-shadow: 0 4px 15px rgba(255, 75, 114, 0.3) !important;
+    transition: all 0.3s ease !important;
+}
+
+button:active, .pink-btn:active {
+    transform: scale(0.98) !important;
+}
