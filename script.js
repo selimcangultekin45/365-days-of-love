@@ -62,7 +62,7 @@ if (messageButton) {
             let cleanMsg = messages[dayNumber - 1].replace(/^Day\s*\d+:\s*/i, '');
             dailyMessage.innerText = cleanMsg;
         } else {
-            dailyMessage.innerText = "Mesaj okunamadı.";
+            dailyMessage.innerText = "Message could not be loaded.";
         }
 
         if (messageBox) {
@@ -164,7 +164,7 @@ function renderPastMessages() {
     if (!hasMessages && isFilteringFavorites) {
         const noFav = document.createElement("div");
         noFav.style.cssText = "text-align:center; color:#888; padding:20px; font-size:14px;";
-        noFav.innerText = "Henüz favori mesaj eklemediniz ❤️";
+        noFav.innerText = "You haven't added any favorite messages yet ❤️";
         pastMessagesList.appendChild(noFav);
     }
 
