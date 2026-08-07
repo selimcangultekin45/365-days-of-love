@@ -17,35 +17,20 @@ function updateCounter() {
 setInterval(updateCounter, 1000);
 updateCounter();
 
-// 2. Çift Yönlü Arka Plan Yağmuru (Aşağıdan Yukarı & Yukarıdan Aşağı)
+// 2. Yoğun ve Uzun Süreli Kalp Akışı
 function createFloatingHearts() {
-    const iconsUp = ['❤️', '💖', '🌸', '💕'];
-    const iconsDown = ['✨', '⭐', '💖', '🌸'];
+    const icons = ['❤️', '💖', '✨', '🌸', '💕', '⭐'];
+    const count = 30; // Ekranda daha yoğun görünmesi için sayı artırıldı
 
-    // Aşağıdan Yukarıya Uçanlar
-    for (let i = 0; i < 18; i++) {
+    for (let i = 0; i < count; i++) {
         const heart = document.createElement('div');
         heart.className = 'bg-heart-up';
-        heart.innerText = iconsUp[Math.floor(Math.random() * iconsUp.length)];
+        heart.innerText = icons[Math.floor(Math.random() * icons.length)];
         heart.style.left = Math.random() * 92 + 'vw';
         
-        const duration = (Math.random() * 2 + 3.5);
-        const delay = (Math.random() * 4);
-        
-        heart.style.animationDuration = duration + 's';
-        heart.style.animationDelay = delay + 's';
-        document.body.appendChild(heart);
-    }
-
-    // Yukarıdan Aşağıya İnenler
-    for (let i = 0; i < 18; i++) {
-        const heart = document.createElement('div');
-        heart.className = 'bg-heart-down';
-        heart.innerText = iconsDown[Math.floor(Math.random() * iconsDown.length)];
-        heart.style.left = Math.random() * 92 + 'vw';
-        
-        const duration = (Math.random() * 2 + 4);
-        const delay = (Math.random() * 4);
+        // Yol uzatıldığı için süreler 5.5s ile 8.5s arasına çekildi
+        const duration = (Math.random() * 3 + 5.5);
+        const delay = (Math.random() * 6);
         
         heart.style.animationDuration = duration + 's';
         heart.style.animationDelay = delay + 's';
@@ -164,5 +149,5 @@ function renderPastMessages(currentDay) {
 if (closeModal && pastModal) {
     closeModal.addEventListener("click", function() { pastModal.style.display = "none"; });
     window.addEventListener("click", function(e) { if (e.target === pastModal) pastModal.style.display = "none"; });
-                }
-            
+}
+    
