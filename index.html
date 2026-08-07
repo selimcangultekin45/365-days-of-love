@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
 <body>
 
     <div class="container">
-        <!-- Başlık Alanı -->
+        <!-- Başlık -->
         <h1 class="main-title">Selimcan <span class="heart-icon">❤️</span> Lia</h1>
         <p class="sub-title">Our little love story</p>
 
@@ -23,9 +23,9 @@
             <div id="counter" class="counter"></div>
         </div>
 
-        <!-- Butonlar -->
-        <button id="messageButton">💌 Open Today's Message</button>
-        <button id="viewPastButton">📜 View Past Messages</button>
+        <!-- Pembe Butonlar -->
+        <button id="messageButton" class="btn btn-primary">✉️ Open Today's Message</button>
+        <button id="viewPastButton" class="btn btn-secondary">📜 View Past Messages</button>
 
         <!-- Açılan Mesaj Kutusu -->
         <div id="messageBox" class="message-card" style="display:none;">
@@ -38,7 +38,7 @@
         <div class="footer-text">Made with ❤️ for Lia</div>
     </div>
 
-    <!-- Geçmiş Mesajlar Penceresi (Modal) -->
+    <!-- Geçmiş Mesajlar Penceresi -->
     <div id="pastModal" class="modal" style="display:none;">
         <div class="modal-content">
             <span id="closeModal" class="close">&times;</span>
@@ -51,6 +51,8 @@
         </div>
     </div>
 
+    <!-- Mesaj Verileri ve Ana Kodlar -->
+    <script src="messages.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
