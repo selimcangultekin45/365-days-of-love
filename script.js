@@ -1,4 +1,4 @@
-     const relationshipStartDate = new Date("2026-06-02");
+ const relationshipStartDate = new Date("2026-06-02");
 let isFilteringFavorites = false;
 
 // 1. Sayaç
@@ -59,7 +59,9 @@ if (messageButton) {
         if (dayNumber > 365) dayNumber = 365;
 
         if (typeof messages !== 'undefined' && Array.isArray(messages) && messages[dayNumber - 1]) {
-            dailyMessage.innerText = messages[dayNumber - 1];
+            // "Day X:" tekrarını temizler
+            let cleanMsg = messages[dayNumber - 1].replace(/^Day\s*\d+:\s*/i, '');
+            dailyMessage.innerText = cleanMsg;
         } else {
             dailyMessage.innerText = "Mesaj okunamadı.";
         }
@@ -91,45 +93,39 @@ const viewPastButton = document.getElementById("viewPastButton");
 const pastModal = document.getElementById("pastModal");
 const closeModal = document.getElementById("closeModal");
 const pastMessagesList = document.getElementById("pastMessagesList");
-const btnAll = document.getElementById("btnAll");
-const btnFav = document.getElementById("btnFav");
 
 if (viewPastButton && pastModal) {
     viewPastButton.addEventListener("click", function() {
         isFilteringFavorites = false;
-        updateFilterButtons();
         renderPastMessages();
         pastModal.style.display = "flex";
     });
 }
 
-if (btnAll && btnFav) {
-    btnAll.addEventListener("click", function() {
-        isFilteringFavorites = false;
-        updateFilterButtons();
-        renderPastMessages();
-    });
-
-    btnFav.addEventListener("click", function() {
-        isFilteringFavorites = true;
-        updateFilterButtons();
-        renderPastMessages();
-    });
-}
-
-function updateFilterButtons() {
-    if (isFilteringFavorites) {
-        btnFav.classList.add("active");
-        btnAll.classList.remove("active");
-    } else {
-        btnAll.classList.add("active");
-        btnFav.classList.remove("active");
-    }
-}
-
 function renderPastMessages() {
     if (!pastMessagesList) return;
     pastMessagesList.innerHTML = "";
+
+    // Filtre Butonlarını Dinamik Oluştur
+    const filterDiv = document.createElement("div");
+    filterDiv.className = "filter-container";
+    filterDiv.style.cssText = "display: flex; justify-content: center; gap: 10px; margin-bottom: 15px;";
+    
+    filterDiv.innerHTML = `
+        <button id="btnAll" style="background: ${!isFilteringFavorites ? '#ff2a55' : '#fff0f3'}; color: ${!isFilteringFavorites ? '#fff' : '#ff2a55'}; border: 1px solid #ffccd5; padding: 6px 16px; border-radius: 20px; font-size: 13px; cursor: pointer;">All</button>
+        <button id="btnFav" style="background: ${isFilteringFavorites ? '#ff2a55' : '#fff0f3'}; color: ${isFilteringFavorites ? '#fff' : '#ff2a55'}; border: 1px solid #ffccd5; padding: 6px 16px; border-radius: 20px; font-size: 13px; cursor: pointer;">Favorites ❤️</button>
+    `;
+    pastMessagesList.appendChild(filterDiv);
+
+    document.getElementById("btnAll").addEventListener("click", () => {
+        isFilteringFavorites = false;
+        renderPastMessages();
+    });
+
+    document.getElementById("btnFav").addEventListener("click", () => {
+        isFilteringFavorites = true;
+        renderPastMessages();
+    });
 
     const favs = getFavorites();
     const today = new Date();
@@ -144,10 +140,15 @@ function renderPastMessages() {
             if (isFilteringFavorites && !isFav) continue;
 
             hasMessages = true;
+            
+            // "Day X:" ibaresi mesaj dizisinde zaten varsa onu bir kez temizler
+            let rawMsg = messages[i];
+            let cleanText = rawMsg.replace(/^Day\s*\d+:\s*/i, '');
+
             const item = document.createElement("div");
             item.className = "message-item";
             item.innerHTML = `
-                <div><strong style="color: #ff2a55;">Day ${i + 1}:</strong> ${messages[i]}</div>
+                <div><strong style="color: #ff2a55;">Day ${i + 1}:</strong> ${cleanText}</div>
                 <span class="fav-heart" data-index="${i}">${isFav ? "❤️" : "🤍"}</span>
             `;
             pastMessagesList.appendChild(item);
@@ -155,7 +156,10 @@ function renderPastMessages() {
     }
 
     if (!hasMessages && isFilteringFavorites) {
-        pastMessagesList.innerHTML = `<div style="text-align:center; color:#aaa; padding:20px;">Henüz favori mesaj eklemediniz ❤️</div>`;
+        const noFav = document.createElement("div");
+        noFav.style.cssText = "text-align:center; color:#888; padding:20px; font-size:14px;";
+        noFav.innerText = "Henüz favori mesaj eklemediniz ❤️";
+        pastMessagesList.appendChild(noFav);
     }
 
     document.querySelectorAll(".fav-heart").forEach(heart => {
